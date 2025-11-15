@@ -1,32 +1,3 @@
-// const express = require("express");
-// const router = express.Router();
-// const User = require("../models/userModel");
-
-
-
-// router.get("/register", (req, res) => {
-//     res.render("register");
-// });
-
-
-// router.post("/register", async (req, res) => {
-//     try{
-//         const data = req.body;
-//         const newUser = new User(data);
-//          const response = await newUser.save();
-//          res.render("login");
-
-//     }catch(error){
-//         console.error("Error adding post:", error);
-//         res.status(500).send("Internal Server Error");
-//     }
-// });
-
-
-// module.exports = router;
-
-
-
 const express = require("express");
 const passport = require("passport");
 const bcrypt = require("bcryptjs");
@@ -71,3 +42,4 @@ router.get("/logout", (req, res) => {
 });
 
 module.exports = router;
+
